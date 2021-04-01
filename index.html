@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Curry/Debounce</title>
+  </head>
+  <body>
+    <h1>Curry/Debounce</h1>
+    <p>Resize the window for debounce; click the button for curry.</p>
+    <hr>
+    <button type="button" id="curryButton">Curry, Please!</button>
+
+    <script src="curry.js"></script>
+    <script src="debounce.js"></script>
+    <script>
+      const curryButton = document.getElementById('curryButton');
+      curryButton.addEventListener('click', () => {
+        console.log('... curry ...');
+      });
+
+      window.addEventListener('resize', debounce(e => console.log('Resize')));
+    </script>
+  </body>
+</html>
