@@ -7,3 +7,14 @@ It's just so easy to rely on any of the great utility libraries out there ... an
 So a currying/debouncing we go!
 
 Just staying sharp.
+
+## Testing
+
+Clone the repo, install deps (2 for testing only), run the tests.
+
+```
+> git clone git@github.com:phillipluther/curry-debounce-rust.git
+> cd curry-debounce-rust
+> npm i
+> npm run test
+```

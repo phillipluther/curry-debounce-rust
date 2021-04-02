@@ -1,0 +1,23 @@
+{
+  "name": "curry-debounce-rust",
+  "version": "0.1.0",
+  "description": "just staying sharp",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phillipluther/curry-debounce-rust.git"
+  },
+  "author": "Phillip Luther <dev@phillipluther.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phillipluther/curry-debounce-rust/issues"
+  },
+  "homepage": "https://github.com/phillipluther/curry-debounce-rust#readme",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "lodash": "^4.17.21"
+  }
+}
