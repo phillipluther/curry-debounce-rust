@@ -4,15 +4,7 @@ const debounce = require('./debounce');
 const _debounce = require('lodash/debounce');
 
 describe('debounce.js', () => {
-  function Context() {
-    this.testContext = function() {
-      return this instanceof Context;
-    }
-  }
-
   const delay = 500;
-  const ctx = new Context();
-
 
   let func;
   let _func;
