@@ -14,27 +14,27 @@ const partiallyCurried = curried(1);
 const _partiallyCurried = _curried(1);
 
 describe('curry.js', () => {
-  it('should return a function', () => {
+  test('returns a function', () => {
     expect(typeof curried).toEqual('function');
     expect(typeof curried).toEqual(typeof _curried);
   });
 
-  it('should return a func honoring the given function\'s signature', () => {
+  test('honors the given function\'s signature', () => {
     expect(curried(1, 2, 3)).toEqual(6);
     expect(curried(1, 2, 3)).toEqual(_curried(1, 2, 3));
   });
 
-  it('should return a func that can be fully curried', () => {
+  test('fully curries', () => {
     expect(curried(1)(2)(3)).toEqual(6);
     expect(curried(1)(2)(3)).toEqual(_curried(1)(2)(3));
   });
 
-  it ('should return a func that can be partially curried', () => {
+  test ('partially curries', () => {
     expect(curried(1)(2, 3)).toEqual(6);
     expect(curried(1)(2, 3)).toEqual(_curried(1)(2, 3));
   });
 
-  it('should return partially curried function when args are not supplied', () => {
+  test('returns a partially curried function when args are not supplied', () => {
     expect(typeof partiallyCurried).toEqual('function');
     expect(typeof partiallyCurried).toEqual(typeof _partiallyCurried);
 
